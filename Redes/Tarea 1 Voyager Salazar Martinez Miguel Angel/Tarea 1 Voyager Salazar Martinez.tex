@@ -1,0 +1,128 @@
+\documentclass[12pt]{report}
+\usepackage[spanish,es-nosectiondot,es-lcroman]{babel}
+\usepackage{siunitx}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amssymb}
+
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+%Configuracion para el . en decimales
+\sisetup{output-decimal-marker = {.}}
+% Configuración para el código
+\lstset{
+	language=Python,
+	basicstyle=\ttfamily\footnotesize,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	stepnumber=1,
+	numbersep=10pt,
+	backgroundcolor=\color{white},
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	frame=single,
+	rulecolor=\color{black},
+	tabsize=4,
+	captionpos=b,
+	breaklines=true,
+	breakatwhitespace=false,
+	linewidth=\linewidth,
+	keepspaces=true,
+	columns=flexible,
+	keywordstyle=\bfseries\color{blue},
+	commentstyle=\itshape\color{lightgray},
+	stringstyle=\color{red},
+	escapeinside={\%*}{*)},
+}
+
+% Configuración de los márgenes
+\geometry{
+	left=2cm,   % Margen izquierdo
+	right=2cm,  % Margen derecho
+	top=2cm,    % Margen superior
+	bottom=2cm  % Margen inferior
+}
+
+% Title Page
+\title{
+	\begin{center}
+		Tarea 1\\
+		Redes de computadoras y protocolos de comunicación I
+		\newline
+		Sondas Voyager
+	\end{center}
+}
+\author{Salazar Martinez Miguel Angel}
+\begin{document}
+	\renewcommand{\arraystretch}{1.3}
+	
+	\maketitle
+
+\section*{Comunicación con las sondas Voyager}
+
+\subsection*{1. Comunicación}
+\begin{itemize}
+	\item \textbf{Deep Space Network (DSN):} La comunicación con las sondas Voyager se realiza a través de la Red del Espacio Profundo (DSN), una red internacional de antenas gigantes administrada por la NASA. La DSN permite el envío y recepción de señales de radio entre la Tierra y las sondas, a pesar de las enormes distancias involucradas.
+	\item \textbf{Señales de Radio:} Las sondas envían datos a la Tierra utilizando señales de radio, que viajan a la velocidad de la luz. Debido a la distancia, puede tomar varias horas para que una señal viaje de la Tierra a las sondas y viceversa.
+\end{itemize}
+
+\subsection*{2. Tecnologías de la Información Involucradas}
+\begin{itemize}
+	\item \textbf{Transmisores de Radio de Alta Potencia:} Las sondas están equipadas con transmisores de radio que envían señales a la Tierra.
+	\item \textbf{Antenas de Alto Ganancia:} Estas antenas aseguran que las señales de radio se concentren en un haz estrecho para maximizar la fuerza de la señal en largas distancias.
+	\item \textbf{Receptores de Radio Sensibles:} En la Tierra, la DSN utiliza receptores muy sensibles para captar las débiles señales que llegan desde las sondas.
+\end{itemize}
+
+\subsection*{3. Energía y Consumo}
+\begin{itemize}
+	\item \textbf{Generadores Termoeléctricos de Radioisótopos (RTG):} Las sondas Voyager utilizan RTGs, que convierten el calor generado por el decaimiento de materiales radiactivos (como el plutonio-238) en electricidad. Esto proporciona una fuente de energía confiable y duradera, esencial para la operación continua de las sondas en el espacio profundo.
+	\item \textbf{Optimización de Consumo:} Dada la limitada cantidad de energía disponible, la gestión eficiente del consumo energético es crucial. La energía se utiliza principalmente para mantener los instrumentos científicos y los sistemas de comunicación activos.
+\end{itemize}
+
+\section*{Modelo en Capas para la Comunicación de las Sondas Voyager}
+
+\subsection*{1. Capa Física}
+\begin{itemize}
+	\item \textbf{Antenas de Alto Ganancia:} Las sondas utilizan antenas parabólicas de alto ganancia para enviar y recibir señales de radio. En la Tierra, la DSN usa antenas gigantes para capturar estas señales.
+	\item \textbf{Frecuencias de Radio:} Se utilizan frecuencias de radio específicas para minimizar la interferencia y maximizar la penetración en el espacio profundo.
+\end{itemize}
+
+\subsection*{2. Capa de Enlace de Datos}
+\begin{itemize}
+	\item \textbf{Codificación y Modulación:} Los datos se codifican para corrección de errores y se modulan para transmisión a través de ondas de radio. El sistema utiliza técnicas como \textbf{PSK (Phase Shift Keying)} para la modulación.
+	\item \textbf{Telemetría y Comandos:} Los datos científicos y de telemetría se empaquetan en tramas que son enviadas a la Tierra. No hay un protocolo de sesión para confirmar la recepción, sino que se envían datos de forma continua.
+\end{itemize}
+
+\subsection*{3. Capa de Red}
+\begin{itemize}
+	\item \textbf{Rutas Directas:} Dado que la comunicación es punto a punto entre la sonda y la DSN, no hay necesidad de enrutar los datos a través de múltiples nodos. La "red" consiste simplemente en la trayectoria de radio desde la sonda hasta la Tierra.
+	\item \textbf{Dirección de Paquetes:} Cada paquete de datos tiene un identificador que asegura que sea procesado por los sistemas correctos en la Tierra.
+\end{itemize}
+
+\subsection*{4. Capa de Transporte}
+\begin{itemize}
+	\item \textbf{Sin Conexión Persistente:} No hay un protocolo como TCP que maneje la sesión o el estado de conexión debido al largo retraso en la comunicación (hasta 22 horas ida y vuelta). Los datos se envían de manera unidireccional, confiando en la robustez de la capa de enlace de datos para la integridad.
+\end{itemize}
+
+\subsection*{5. Capa de Aplicación}
+\begin{itemize}
+	\item \textbf{Datos Científicos y Telemetría:} La información enviada incluye datos científicos (imágenes, lecturas de instrumentos) y telemetría (estado de la sonda, niveles de energía, etc.).
+	\item \textbf{Comandos de la Tierra:} La sonda recibe comandos para ajustar operaciones o cambiar el estado de los instrumentos, pero no verifica la recepción de cada comando debido a la imposibilidad de mantener una sesión continua.
+\end{itemize}
+
+\subsection*{Referencias para Investigar}
+
+	\begin{itemize}
+		\item \url{https://science.nasa.gov/mission/voyager}
+		\item \url{https://www.nasa.gov/directorates/somd/space-communications-navigation-program/what-is-the-deep-space-network/}
+		\item \url{https://www.ngenespanol.com/el-espacio/que-son-las-voyager-1-y-2-y-cuanto-tiempo-llevan-en-el-espacio-sondas/}
+	\end{itemize}
+	
+\end{document}
+

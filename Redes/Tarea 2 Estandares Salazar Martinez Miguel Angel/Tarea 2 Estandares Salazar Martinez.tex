@@ -1,0 +1,218 @@
+\documentclass[12pt]{report}
+\usepackage[spanish,es-nosectiondot,es-lcroman]{babel}
+\usepackage{siunitx}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+%Configuracion para el . en decimales
+\sisetup{output-decimal-marker = {.}}
+% Configuración para el código
+\lstset{
+	language=Python,
+	basicstyle=\ttfamily\footnotesize,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	stepnumber=1,
+	numbersep=10pt,
+	backgroundcolor=\color{white},
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	frame=single,
+	rulecolor=\color{black},
+	tabsize=4,
+	captionpos=b,
+	breaklines=true,
+	breakatwhitespace=false,
+	linewidth=\linewidth,
+	keepspaces=true,
+	columns=flexible,
+	keywordstyle=\bfseries\color{blue},
+	commentstyle=\itshape\color{lightgray},
+	stringstyle=\color{red},
+	escapeinside={\%*}{*)},
+}
+
+% Configuración de los márgenes
+\geometry{
+	left=2cm,   % Margen izquierdo
+	right=2cm,  % Margen derecho
+	top=2cm,    % Margen superior
+	bottom=2cm  % Margen inferior
+}
+
+% Title Page
+\title{
+	\begin{center}
+		Tarea 2\\
+		Procesos de Estandarización de Protocolos\\
+		Redes de computadoras y protocolos de comunicación I
+		
+	\end{center}
+}
+\author{Salazar Martinez Miguel Angel}
+\begin{document}
+	\renewcommand{\arraystretch}{1.3}
+	
+	\maketitle
+
+\section*{Procesos de Estandarización y Organización de Documentos}
+
+\subsection*{1. The International Organization for Standardization (ISO)}
+
+\textbf{Organización de documentos:} \\
+Los estándares ISO siguen una estructura organizada en secciones, que incluyen:
+\begin{itemize}
+	\item Título y número de la norma.
+	\item Introducción: Proporciona el contexto y objetivos del estándar.
+	\item Alcance: Define qué cubre y qué no cubre el estándar.
+	\item Referencias normativas: Lista de documentos a los que se hace referencia.
+	\item Términos y definiciones: Explicación de términos utilizados en el estándar.
+	\item Requisitos: Contenido principal que detalla los requisitos específicos.
+	\item Anexos: Información complementaria opcional.
+\end{itemize}
+
+\textbf{Proceso de creación/actualización:} \\
+El proceso de creación o actualización de un estándar ISO se lleva a cabo en varias etapas:
+\begin{enumerate}
+	\item \textit{Propuesta inicial:} Un miembro presenta una nueva norma o una revisión.
+	\item \textit{Aprobación del proyecto:} El comité técnico correspondiente vota sobre la propuesta.
+	\item \textit{Desarrollo:} Se redacta un borrador del estándar.
+	\item \textit{Comentario público:} Se somete a revisión pública y se recogen comentarios.
+	\item \textit{Aprobación final:} Se realiza una votación final para aprobar el estándar.
+	\item \textit{Publicación:} El estándar es publicado oficialmente.
+\end{enumerate}
+
+\textbf{Fuente:} \url{https://www.iso.org/directives-and-policies.html}
+
+\subsection*{2. International Telecommunication Union (ITU-T)}
+
+\textbf{Organización de documentos:} \\
+Las recomendaciones ITU-T están organizadas en:
+\begin{itemize}
+	\item Título y número de la recomendación.
+	\item Resumen: Breve descripción del contenido.
+	\item Introducción: Contexto y propósito.
+	\item Cuerpo principal: Requisitos y directrices.
+	\item Anexos: Información adicional o ejemplos.
+\end{itemize}
+
+\textbf{Proceso de creación/actualización:} \\
+El proceso sigue estas etapas:
+\begin{enumerate}
+	\item \textit{Propuesta inicial:} Presentación por parte de un miembro.
+	\item \textit{Estudio:} Evaluación inicial por un grupo de estudio.
+	\item \textit{Redacción:} Desarrollo del borrador de la recomendación.
+	\item \textit{Consulta y revisión:} Revisión por expertos y miembros.
+	\item \textit{Aprobación:} Aprobación por consenso.
+	\item \textit{Publicación:} Publicación de la recomendación.
+\end{enumerate}
+
+\textbf{Fuente:} \url{https://www.itu.int/en/ITU-T/publications/Pages/recs.aspx}
+
+\subsection*{3. Internet Engineering Task Force (IETF)}
+
+\textbf{Organización de documentos:} \\
+Los documentos de la IETF, conocidos como RFCs, incluyen:
+\begin{itemize}
+	\item Título y número del RFC.
+	\item Resumen: Breve descripción del RFC.
+	\item Introducción: Contexto y propósito.
+	\item Cuerpo principal: Contenido detallado.
+	\item Conclusiones: Resumen de hallazgos o recomendaciones.
+	\item Referencias: Fuentes y documentación citada.
+\end{itemize}
+
+\textbf{Proceso de creación/actualización:} \\
+El proceso de creación de un RFC es:
+\begin{enumerate}
+	\item \textit{Idea inicial:} Propuesta por un individuo o grupo.
+	\item \textit{Redacción del borrador:} Creación del borrador inicial.
+	\item \textit{Discusión y revisión:} Revisión por la comunidad IETF.
+	\item \textit{Última llamada:} Consulta final antes de la publicación.
+	\item \textit{Publicación:} Publicación oficial como RFC.
+\end{enumerate}
+
+\textbf{Fuente:} \url{https://www.rfc-editor.org/pubprocess/}
+
+\subsection*{4. European Telecommunications Standards Institute (ETSI)}
+
+\textbf{Organización de documentos:} \\
+Los documentos ETSI incluyen:
+\begin{itemize}
+	\item Título y número de la norma.
+	\item Alcance: Definición de lo que cubre la norma.
+	\item Referencias: Documentos y normas citados.
+	\item Términos y definiciones: Clarificación de terminología.
+	\item Requisitos técnicos: Contenido principal.
+\end{itemize}
+
+\textbf{Proceso de creación/actualización:} \\
+El proceso incluye:
+\begin{enumerate}
+	\item \textit{Propuesta:} Presentación de una nueva norma.
+	\item \textit{Desarrollo:} Redacción del borrador.
+	\item \textit{Consulta:} Revisión pública.
+	\item \textit{Aprobación:} Aprobación formal.
+	\item \textit{Publicación:} Publicación oficial.
+\end{enumerate}
+
+\textbf{Fuente:} \url{https://www.etsi.org/standards/standards-making}
+
+\subsection*{5. Institute of Electrical and Electronics Engineers (IEEE)}
+
+\textbf{Organización de documentos:} \\
+Los estándares IEEE están estructurados en:
+\begin{itemize}
+	\item Título y número del estándar.
+	\item Introducción: Contexto y objetivos.
+	\item Cuerpo principal: Requisitos y especificaciones.
+	\item Anexos: Información complementaria.
+\end{itemize}
+
+\textbf{Proceso de creación/actualización:} \\
+El proceso es:
+\begin{enumerate}
+	\item \textit{Propuesta inicial:} Presentación del proyecto.
+	\item \textit{Aprobación inicial:} Revisión por el comité.
+	\item \textit{Desarrollo del borrador:} Redacción y revisión.
+	\item \textit{Revisión y votación:} Evaluación por los miembros.
+	\item \textit{Aprobación final:} Aprobación por el comité de revisión.
+	\item \textit{Publicación:} Publicación oficial.
+\end{enumerate}
+
+\textbf{Fuente:} \url{https://standards.ieee.org/develop/}
+
+\subsection*{6. Society of Automotive Engineers (SAE)}
+
+\textbf{Organización de documentos:} \\
+Los estándares SAE incluyen:
+\begin{itemize}
+	\item Título y número del estándar.
+	\item Propósito y alcance: Definición del propósito del estándar.
+	\item Referencias: Documentación citada.
+	\item Métodos de ensayo: Procedimientos específicos.
+\end{itemize}
+
+\textbf{Proceso de creación/actualización:} \\
+El proceso sigue estos pasos:
+\begin{enumerate}
+	\item \textit{Propuesta:} Presentación de un nuevo estándar.
+	\item \textit{Revisión:} Evaluación inicial por un comité.
+	\item \textit{Redacción:} Desarrollo del borrador.
+	\item \textit{Consulta:} Revisión pública.
+	\item \textit{Aprobación:} Votación y consenso.
+	\item \textit{Publicación:} Publicación oficial.
+\end{enumerate}
+
+\textbf{Fuente:} \url{https://www.sae.org/standards/development}
+
+	
+\end{document}
+

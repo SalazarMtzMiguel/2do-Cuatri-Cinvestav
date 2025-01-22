@@ -1,0 +1,14 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'Tarea 3 Gestion Internet Salazar Martinez.blg'
+[135] biber-MSWIN64:340> INFO - === 
+[190] Biber.pm:420> INFO - Reading 'Tarea 3 Gestion Internet Salazar Martinez.bcf'
+[315] Biber.pm:994> INFO - Found 2 citekeys in bib section 0
+[330] Biber.pm:4463> INFO - Processing section 0
+[343] Biber.pm:4654> INFO - Looking for bibtex file './citas/citas.bib' for section 0
+[391] bibtex.pm:1713> INFO - LaTeX decoding ...
+[407] bibtex.pm:1519> INFO - Found BibTeX data source './citas/citas.bib'
+[445] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[445] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[445] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[450] bbl.pm:676> INFO - Writing 'Tarea 3 Gestion Internet Salazar Martinez.bbl' with encoding 'UTF-8'
+[451] bbl.pm:779> INFO - Output to Tarea 3 Gestion Internet Salazar Martinez.bbl
