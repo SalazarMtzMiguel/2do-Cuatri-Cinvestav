@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.22)  22 JAN 2025 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.22)  24 JAN 2025 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -824,36 +824,8 @@ File: screenshot001.png Graphic file (type png)
 <use screenshot001.png>
 Package pdftex.def Info: screenshot001.png  used on input line 68.
 (pdftex.def)             Requested size: 500.484pt x 129.30087pt.
-<screenshot002.png, id=12, 1099.10625pt x 392.21532pt>
-File: screenshot002.png Graphic file (type png)
-<use screenshot002.png>
-Package pdftex.def Info: screenshot002.png  used on input line 73.
-(pdftex.def)             Requested size: 500.484pt x 178.59589pt.
-<screenshot003.png, id=13, 1117.17375pt x 141.52875pt>
-File: screenshot003.png Graphic file (type png)
-<use screenshot003.png>
-Package pdftex.def Info: screenshot003.png  used on input line 78.
-(pdftex.def)             Requested size: 500.484pt x 63.40443pt.
-<screenshot004.png, id=14, 1095.3422pt x 57.21375pt>
-File: screenshot004.png Graphic file (type png)
-<use screenshot004.png>
-Package pdftex.def Info: screenshot004.png  used on input line 83.
-(pdftex.def)             Requested size: 500.484pt x 26.14229pt.
-<screenshot008.png, id=15, 1098.35344pt x 34.62938pt>
-File: screenshot008.png Graphic file (type png)
-<use screenshot008.png>
-Package pdftex.def Info: screenshot008.png  used on input line 89.
-(pdftex.def)             Requested size: 500.484pt x 15.7791pt.
-<screenshot006.png, id=16, 1101.36469pt x 127.22531pt>
-File: screenshot006.png Graphic file (type png)
-<use screenshot006.png>
-Package pdftex.def Info: screenshot006.png  used on input line 94.
-(pdftex.def)             Requested size: 500.484pt x 57.81383pt.
-<screenshot007.png, id=17, 1094.58937pt x 192.72pt>
-File: screenshot007.png Graphic file (type png)
-<use screenshot007.png>
-Package pdftex.def Info: screenshot007.png  used on input line 99.
-(pdftex.def)             Requested size: 500.484pt x 88.12pt.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 72.
 
 
 
@@ -861,15 +833,54 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101 
-       [1 <./screenshot001.png> <./screenshot002.png> <./screenshot003.png> <./
-screenshot004.png> <./screenshot008.png> <./screenshot006.png>]
+l.117 	
+       y = (y - y_mean) / y_std [1 <./screenshot001.png>]
+<screenshot002.png, id=64, 1099.10625pt x 392.21532pt>
+File: screenshot002.png Graphic file (type png)
+<use screenshot002.png>
+Package pdftex.def Info: screenshot002.png  used on input line 164.
+(pdftex.def)             Requested size: 500.484pt x 178.59589pt.
 
-LaTeX Warning: Empty bibliography on input line 102.
+
+[2]
+<screenshot003.png, id=109, 1117.17375pt x 141.52875pt>
+File: screenshot003.png Graphic file (type png)
+<use screenshot003.png>
+Package pdftex.def Info: screenshot003.png  used on input line 171.
+(pdftex.def)             Requested size: 500.484pt x 63.40443pt.
+
+
+[3 <./screenshot002.png> <./screenshot003.png>]
+<screenshot004.png, id=123, 1095.3422pt x 57.21375pt>
+File: screenshot004.png Graphic file (type png)
+<use screenshot004.png>
+Package pdftex.def Info: screenshot004.png  used on input line 216.
+(pdftex.def)             Requested size: 500.484pt x 26.14229pt.
+<screenshot008.png, id=124, 1098.35344pt x 34.62938pt>
+File: screenshot008.png Graphic file (type png)
+<use screenshot008.png>
+Package pdftex.def Info: screenshot008.png  used on input line 242.
+(pdftex.def)             Requested size: 500.484pt x 15.7791pt.
+<screenshot006.png, id=125, 1101.36469pt x 127.22531pt>
+File: screenshot006.png Graphic file (type png)
+<use screenshot006.png>
+Package pdftex.def Info: screenshot006.png  used on input line 247.
+(pdftex.def)             Requested size: 500.484pt x 57.81383pt.
+
+
+[4 <./screenshot004.png> <./screenshot008.png> <./screenshot006.png>]
+<screenshot007.png, id=136, 1094.58937pt x 192.72pt>
+File: screenshot007.png Graphic file (type png)
+<use screenshot007.png>
+Package pdftex.def Info: screenshot007.png  used on input line 269.
+(pdftex.def)             Requested size: 500.484pt x 88.12pt.
+
+
+LaTeX Warning: Empty bibliography on input line 294.
 
 
 
-[2 <./screenshot007.png>] (HW2_SalazarMartinez.aux
+[5 <./screenshot007.png>] (HW2_SalazarMartinez.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -885,18 +896,28 @@ Package logreq Info: Writing requests to 'HW2_SalazarMartinez.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24502 strings out of 473536
- 471748 string characters out of 5725023
- 1278961 words of memory out of 5000000
- 47488 multiletter control sequences out of 15000+600000
- 562033 words of font info for 49 fonts, out of 8000000 for 9000
+ 25080 strings out of 473536
+ 477572 string characters out of 5725023
+ 1568961 words of memory out of 5000000
+ 47961 multiletter control sequences out of 15000+600000
+ 568135 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,81p,710b,1848s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
- Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on HW2_SalazarMartinez.pdf (3 pages, 238540 bytes).
+ 75i,6n,81p,710b,2568s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Mikec\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb>
+Output written on HW2_SalazarMartinez.pdf (6 pages, 381394 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
